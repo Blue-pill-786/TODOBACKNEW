@@ -3,7 +3,9 @@ const {getToDos, saveToDos, updateToDos, deleteToDos} = require("../controller/T
 
 
 const router = Router();
-
+router.get("/",(req,res)=>{
+    console.log("Working")
+})
 router.get("/get", getToDos);
 router.post("/save", saveToDos);
 router.put("/update/:id", updateToDos);
