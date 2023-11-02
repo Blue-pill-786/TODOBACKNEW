@@ -23,6 +23,9 @@ mongoose.connect(process.env.MONGO_URI)
 .catch((error)=>console.log(error));
 
 app.use("/api", routes);
+app.use("/",(req,res)=>{
+    res.send("<h1>Welcome To My Todo App</h1>")
+})
 
 app.listen(PORT,()=>{
     console.log(`Server is Running on ${PORT}`)
