@@ -4,7 +4,7 @@ const {getToDos, saveToDos, updateToDos, deleteToDos} = require("../controller/T
 
 const router = Router();
 router.get("/",(req,res)=>{
-    res.send("<h1>Welcome To My Todo App</h1>")
+    res.send("<h1>Welcome To My Todo App Working</h1>")
 })
 router.get("/get", getToDos);
 router.post("/save", saveToDos);
